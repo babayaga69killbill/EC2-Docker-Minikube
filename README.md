@@ -96,4 +96,5 @@ docker run --name myapache -p 80:80 -d ubuntu/apache2
 ```bash
 docker kill mynginxl
 ```
+![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/WhatsApp%20Image%202025-09-07%20at%2000.05.24_4768f18c.jpg)
 
