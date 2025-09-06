@@ -5,4 +5,4 @@ installing minikube and docker on ec2
 3. select your desired prefrences in storage,AMI
 4. have a watch and launch
 5. select key pair host through putty
-![]()
+![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/Screenshot%202025-09-06%20203355.png)
