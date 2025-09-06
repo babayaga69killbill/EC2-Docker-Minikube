@@ -98,21 +98,27 @@ docker kill mynginxl
 ```
 ![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/WhatsApp%20Image%202025-09-07%20at%2000.05.24_4768f18c.jpg)
 # for installing minikube
-```To install the latest minikube stable release on x86-64 Linux using binary download:
+To install the latest minikube stable release on x86-64 Linux using binary download:
 
-curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
-2Start your cluster
+```curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64```
+# 2.Start your cluster
 From a terminal with administrator access (but not logged in as root), run:
-
-minikube start
-If minikube fails to start, see the drivers page for help setting up a compatible container or virtual-machine manager.
-
-3Interact with your cluster
+```minikube start```
+# Interact with your cluster
 If you already have kubectl installed (see documentation), you can now use it to access your shiny new cluster:
 
-kubectl get po -A
+```kubectl get po -A```
 Alternatively, minikube can download the appropriate version of kubectl and you should be able to use it like this:
 
-minikube kubectl -- get po -A```
+```minikube kubectl -- get po -A```
+You can also make your life easier by adding the following to your shell config: (for more details see: kubectl)
 
+```alias kubectl="minikube kubectl --"```
+Initially, some services such as the storage-provisioner, may not yet be in a Running state. This is a normal condition during cluster bring-up, and will resolve itself momentarily. For additional insight into your cluster state, minikube bundles the Kubernetes Dashboard, allowing you to get easily acclimated to your new environment:
+
+```minikube dashboard```
+![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/Screenshot%202025-09-06%20201800.png)
+![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/Screenshot%202025-09-06%20202136.png)
+# final step
+![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/Screenshot%202025-09-06%20203101.png)
+![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/Screenshot%202025-09-06%20203204.png)
