@@ -97,8 +97,8 @@ docker run --name myapache -p 80:80 -d ubuntu/apache2
 docker kill mynginxl
 ```
 ![](https://github.com/babayaga69killbill/EC2-Docker-Minikube/blob/main/holocaust/WhatsApp%20Image%202025-09-07%20at%2000.05.24_4768f18c.jpg)
-#for installing minikube
-To install the latest minikube stable release on x86-64 Linux using binary download:
+# for installing minikube
+```To install the latest minikube stable release on x86-64 Linux using binary download:
 
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
@@ -114,5 +114,5 @@ If you already have kubectl installed (see documentation), you can now use it to
 kubectl get po -A
 Alternatively, minikube can download the appropriate version of kubectl and you should be able to use it like this:
 
-minikube kubectl -- get po -A
+minikube kubectl -- get po -A```
 
